@@ -46,7 +46,7 @@ const App = () => {
         <Route path="/login" element={<Login getUser={getUser} />} />
         <Route path="/register" element={<Register />} />
         <Route path="/success" element={<Success getUser={getUser}/>} />
-        <Route path="/cancel" element={<Cancel />} />
+        <Route path="/cancel" element={<Cancel/>} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />

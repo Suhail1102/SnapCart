@@ -64,7 +64,7 @@ const Login = ({getUser}) => {
           
             <input type="email" placeholder='Enter Your Email' name='email' className=' text-gray-800 px-4 rounded-lg text-lg py-2 bg-gray-200' value={formData.email} onChange={handleChange} required autoComplete='off'/>
             <input type="password" placeholder='Enter Your Password' name='password' className='text-gray-800 px-4 rounded-lg text-lg py-2 bg-gray-200' value={formData.password} onChange={handleChange} required autoComplete='off'/>
-            <button type='submit' className='px-4 rounded-lg text-gray-800 text-lg py-2 bg-green-500 text-white'>{loading ? 'Loading...':'Login'}</button>
+            <button type='submit' className='px-4 rounded-lg text-lg py-2 bg-green-500 text-white'>{loading ? 'Loading...':'Login'}</button>
           </form>
           <p className='text-lg'>Don't have an account ? <Link to={"/register"} className='underline text-blue-500'>Register Here</Link></p>
         </div>
